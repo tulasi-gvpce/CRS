@@ -6,7 +6,7 @@ import requests
 # Load model and processor
 # Load model directly
 map={
-    0:"No_DR",
+    0:"No_Diabetice",
     1:"Mild",
     2:"Moderate",
     3:"severe",
