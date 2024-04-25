@@ -21,12 +21,9 @@ st.write("Upload an image for classification.")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    # Display uploaded image with custom size
+    # Display uploaded image
     image = Image.open(uploaded_file)
-    # Set custom width and height using HTML and CSS
-    st.write("<div style='width:300px;height:300px'>")
     st.image(image, caption="Uploaded Image", use_column_width=True)
-    st.write("</div>")
 
     # Make prediction when button is clicked
     if st.button("Classify"):
